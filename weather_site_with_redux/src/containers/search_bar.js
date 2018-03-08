@@ -57,10 +57,10 @@ onFormSubmit(event) {
   }
 }
 
-function mapDispatchToProps(dispacth) {
+function mapDispatchToProps(dispatch) {
   // bind action creator fetchWeather with dispatch - make sure action flows down into middleware and then reducers inside our redux app
 
-  return bindActionCreators({ fetchWeather}, dispacth);
+  return bindActionCreators({ fetchWeather}, dispatch);
 }
 
 // previously had containers where we map dispatch to props and we map state to props as well.
